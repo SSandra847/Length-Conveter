@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Feet to Meters Length Converter</title>
+<body>
+
+<h2>Length Converter</h2>
+<p>Type a value in the Feet field to convert the value:</p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Inches: <span id="outputInches"></span></p>
+
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>cm: <span id="outputcm"></span></p>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Yards: <span id="outputYards"></span></p>
+
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+}
+
+function LengthConverter(valNum) {
+  document.getElementById("outputInches").innerHTML=valNum*12;
+}
+
+function LengthConverter(valNum) {
+  document.getElementById("outputcm").innerHTML=valNum/0.032808;
+}
+
+function LengthConverter(valNum) {
+  document.getElementById("outputYards").innerHTML=valNum*0.33333;
+}
+</script>
+</body>
+</html>
